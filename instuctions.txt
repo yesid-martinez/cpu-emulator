@@ -1,0 +1,21 @@
+Formato R (Register–Register)
+[ 4 bits opcode ][ 4 bits rd ][ 4 bits rs1 ][ 4 bits rs2 ]
+
+Formato I (Immediate)
+[ 4 bits opcode ][ 4 bits rd ][ 4 bits rs1 ][ 4 bits imm ]
+
+
+
+LOAD / STORE
+(load use rd; store use rs2 as data source)
+
+LOAD:
+[ opcode ][ rd ][ base(rs1) ][ imm ]
+
+STORE:
+[ opcode ][ rs2 ][ base(rs1) ][ imm ]
+
+
+
+JUMP / BRANCH
+[ opcode ][ ---- unused ---- ][ imm (12 bits) ]
